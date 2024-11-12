@@ -1216,8 +1216,10 @@
         currentAudioIndex = index;
 
         // Reproduce el audio actual y cambia el estado de reproducción
-        audioElements[currentAudioIndex].play();
-        isPlaying = true;
+        setTimeout(() => {
+          audioElements[currentAudioIndex].play();
+          isPlaying = true;
+        }, 0);
       }
 
       function playNext() {
