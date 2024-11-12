@@ -28,6 +28,23 @@
   </head>
 
   <body class="ui-smooth-scroll">
+    <div class="audio-gallery">
+      <audio id="audio0" autoplay>
+        <source src="./assets/media/music/bg.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio1">
+        <source src="./assets/media/music/bg2.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio2">
+        <source src="./assets/media/music/bg3.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio3">
+        <source src="./assets/media/music/bg4.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audio3">
+        <source src="./assets/media/music/bg5.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
     <!-- Preloader -->
     <div id="preloader">
       <div class="contain">
@@ -52,15 +69,22 @@
           <div class="main">
             <div class="vertical-lines"></div>
             <div class="circle-img left">
-              <img
-                src="assets/media/banner/banner-img-1.jpg"
-                alt=""
+              <video
+                autoplay
+                muted
+                loop
                 style="
+                  width: 100%;
+                  border-radius: 50%;
                   aspect-ratio: 1 / 1;
                   object-fit: cover;
-                  border-radius: 50%;
                 "
-              />
+              >
+                <source
+                  src="./assets/media/gallery/IMG_3796.MP4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
             <h1 class="title">Todo lo que<br />Necesito<br />Eres TÚ</h1>
             <div class="circle-img right">
@@ -855,141 +879,320 @@
           <div class="gallery">
             <img
               src="assets/media/gallery/img (1).jpeg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3796.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3796.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (1).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (10).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3797.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3797.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (11).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (12).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (13).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (14).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (15).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3798.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3798.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (16).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (17).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3814.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3814.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (18).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (19).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (2).jpeg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3799.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3799.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (2).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (20).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3800.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3800.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (21).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (22).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (23).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3801.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3801.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (24).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (25).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3813.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3813.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (26).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (27).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (28).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3802.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3802.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (3).jpeg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (3).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (4).jpeg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3804.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3804.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (4).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (5).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (6).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (7).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3806.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3806.MP4"
+                type="video/mp4"
+              />
+            </video>
             <img
               src="assets/media/gallery/img (8).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
             />
             <img
               src="assets/media/gallery/img (9).jpg"
-              onclick="openModal(this)"
+              onclick="openModal('image', this.src)"
+            />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3811.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3811.MP4"
+                type="video/mp4"
+              />
+            </video>
+            <img
+              src="assets/media/gallery/img (29).jpg"
+              onclick="openModal('image', this.src)"
+            />
+            <video
+              autoplay
+              muted
+              loop
+              style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover"
+              onclick="openModal('video', './assets/media/gallery/IMG_3812.MP4')"
+            >
+              <source
+                src="./assets/media/gallery/IMG_3812.MP4"
+                type="video/mp4"
+              />
+            </video>
+            <img
+              src="assets/media/gallery/img (30).jpg"
+              onclick="openModal('image', this.src)"
+            />
+            <img
+              src="assets/media/gallery/img (31).jpg"
+              onclick="openModal('image', this.src)"
             />
           </div>
           <!-- Gallery Area End  -->
         </div>
         <!-- Main Content End -->
 
+        <!-- Modal para mostrar imagen o video en grande -->
         <div id="modal" class="modal" onclick="closeModal()">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="modalImg" />
-          <div id="caption"></div>
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <img id="modalImg" />
+            <video id="modalVideo" controls>
+              <source id="modalVideoSource" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <div class="audio-controls">
+          <button onclick="playPrevious()">⏮️</button>
+          <button onclick="togglePlayPause()">⏯️</button>
+          <button onclick="playNext()">⏭️</button>
         </div>
 
         <!-- footer Area start -->
@@ -1002,21 +1205,127 @@
       </div>
     </div>
     <script>
-      // Abre el modal y muestra la imagen seleccionada
-      function openModal(img) {
-        const modal = document.getElementById("modal");
-        const modalImg = document.getElementById("modalImg");
-        const captionText = document.getElementById("caption");
+      let originalAudioVolumes = [];
+      const audioElements = document.querySelectorAll(".audio-gallery audio");
+      let currentAudioIndex = 0;
+      let isPlaying = false;
 
-        modal.style.display = "block";
-        modalImg.src = img.src;
-        captionText.innerHTML = img.alt;
+      function playAudio(index) {
+        // Pausa cualquier audio que esté reproduciéndose
+        audioElements.forEach((audio) => audio.pause());
+        currentAudioIndex = index;
+
+        // Reproduce el audio actual y cambia el estado de reproducción
+        audioElements[currentAudioIndex].play();
+        isPlaying = true;
       }
 
-      // Cierra el modal
+      function playNext() {
+        // Si estamos en el último audio, volvemos al primero; si no, pasamos al siguiente
+        if (currentAudioIndex < audioElements.length - 1) {
+          currentAudioIndex++;
+        } else {
+          currentAudioIndex = 0; // Reinicia la playlist desde el primer audio
+        }
+
+        const currentAudio = audioElements[currentAudioIndex];
+        currentAudio.currentTime = 0; // Reinicia la canción solo cuando se llama desde el botón
+        playAudio(currentAudioIndex);
+      }
+
+      function playPrevious() {
+        // Retrocede al audio anterior si existe; si no, queda en el primero
+        if (currentAudioIndex > 0) {
+          currentAudioIndex--;
+        } else {
+          currentAudioIndex = audioElements.length - 1; // Si estamos en el primero, pasa al último
+        }
+
+        const currentAudio = audioElements[currentAudioIndex];
+        currentAudio.currentTime = 0; // Reinicia la canción solo cuando se llama desde el botón
+        playAudio(currentAudioIndex);
+      }
+
+      function togglePlayPause() {
+        const currentAudio = audioElements[currentAudioIndex];
+
+        // Cambia entre pausar y reproducir el audio
+        if (isPlaying) {
+          currentAudio.pause();
+        } else {
+          currentAudio.play();
+        }
+        isPlaying = !isPlaying;
+      }
+
+      // Añade un evento para pasar automáticamente al siguiente audio
+      audioElements.forEach((audio, index) => {
+        audio.addEventListener("ended", () => {
+          if (
+            index === currentAudioIndex &&
+            currentAudioIndex < audioElements.length - 1
+          ) {
+            playNext();
+          } else {
+            isPlaying = false; // Detiene cuando termina el último audio
+          }
+        });
+      });
+
+      // Inicia la reproducción automática de la playlist
+      playAudio(currentAudioIndex);
+
+      // Función para guardar el volumen original de los audios
+      function storeOriginalVolume() {
+        audioElements.forEach((audio) => {
+          originalAudioVolumes.push(audio.volume); // Guarda el volumen actual de cada audio
+          audio.volume = 0.1; // Baja el volumen de todos los audios
+        });
+      }
+
+      // Función para restaurar el volumen original de los audios
+      function restoreOriginalVolume() {
+        audioElements.forEach((audio, index) => {
+          audio.volume = originalAudioVolumes[index] || 1; // Restaura el volumen original
+        });
+      }
+
+      function openModal(type, src) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modalImg");
+        const modalVideo = document.getElementById("modalVideo");
+
+        // Reset display styles for both elements
+        modalImg.style.display = "none";
+        modalVideo.style.display = "none";
+
+        if (type === "image") {
+          modalImg.src = src;
+          modalImg.style.display = "block";
+        } else if (type === "video") {
+          storeOriginalVolume();
+          // Limpiar el contenido actual de <video> y agregar un nuevo <source>
+          modalVideo.innerHTML = `<source src="${src}" type="video/mp4">`;
+          modalVideo.load(); // Cargar el nuevo source
+          modalVideo.style.display = "block";
+          modalVideo.muted = false; // Activar sonido
+          modalVideo.loop = false; // Desactivar loop en el modal
+          modalVideo.play();
+        }
+
+        modal.style.display = "block";
+      }
+
       function closeModal() {
         const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modalImg");
+        const modalVideo = document.getElementById("modalVideo");
+
         modal.style.display = "none";
+        modalImg.src = ""; // Limpiar la imagen
+        modalVideo.pause(); // Pausar el video
+        modalVideo.innerHTML = ""; // Limpiar el source del video
+        restoreOriginalVolume();
       }
     </script>
     <!-- Jquery Js -->
